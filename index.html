@@ -62,19 +62,19 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="aboutUs" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         About Us
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="/#what-we-do">What we do</a>
+                    <div class="dropdown-menu shadow-sm" aria-labelledby="aboutUs">
+                        <a class="dropdown-item" href="/#what-we-do-section" data-target="what-we-do-section" >What we do</a>
                         <a class="dropdown-item" href="/mission">Vision & Mission</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="company" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Company
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <div class="dropdown-menu shadow-sm" aria-labelledby="company">
                         <a class="dropdown-item" href="/history">History</a>
                         <a class="dropdown-item" href="/leadership">Leadership</a>
                     </div>
@@ -118,55 +118,56 @@
                     Services
                 </a>
             </div>
+
             <div class="col-lg-12 hide-xs">
                 <div class="nigeria_map">
-                    <img src="/images/bulb.svg" style="position: absolute; top: 177px; left: 232px">
+                    <div class="bulb-animation"></div>
                     <span class="location" data-x="148px" data-y="300px" data-loc="Jigawa"
-                          data-toggle="tooltip" data-placement="top" title="Jigawa">
+                          data-toggle="tooltip" data-placement="top">
                         <span class="name">Jigawa</span>
                     </span>
                     <span class="location" data-x="180px" data-y="255px" data-loc="Kano"
-                          data-toggle="tooltip" data-placement="top" title="Kano">
+                          data-toggle="tooltip" data-placement="top">
                         <span class="name">Kano</span>
                     </span>
                     <span class="location" data-x="230px" data-y="221px" data-loc="Kaduna"
-                          data-toggle="tooltip" data-placement="top" title="Kaduna">
+                          data-toggle="tooltip" data-placement="top">
                         <span class="name">Kaduna</span>
                     </span>
                     <span class="location" data-x="290px" data-y="200px" data-loc="FCT"
-                          data-toggle="tooltip" data-placement="top" title="Abuja">
+                          data-toggle="tooltip" data-placement="top">
                         <span class="name">Abuja</span>
                     </span>
                     <span class="location" data-x="310px" data-y="20px" data-loc="Oyo"
-                          data-toggle="tooltip" data-placement="top" title="Oyo">
+                          data-toggle="tooltip" data-placement="top">
                         <span class="name">Oyo</span>
                     </span>
                     <span class="location" data-x="400px" data-y="10px" data-loc="Ogun"
-                          data-toggle="tooltip" data-placement="top" title="Ogun">
+                          data-toggle="tooltip" data-placement="top">
                         <span class="name">Ogun</span>
                     </span>
                     <span class="location" data-x="410px" data-y="60px" data-loc="Lagos"
-                          data-toggle="tooltip" data-placement="top" title="Lagos">
+                          data-toggle="tooltip" data-placement="top">
                         <span class="name">Lagos</span>
                     </span>
                     <span class="location" data-x="400px" data-y="100px" data-loc="Ondo"
-                          data-toggle="tooltip" data-placement="top" title="Ondo">
+                          data-toggle="tooltip" data-placement="top">
                         <span class="name">Ondo</span>
                     </span>
                     <span class="location" data-x="400px" data-y="160px" data-loc="Edo"
-                          data-toggle="tooltip" data-placement="top" title="Edo">
+                          data-toggle="tooltip" data-placement="top">
                         <span class="name">Edo</span>
                     </span>
                     <span class="location" data-x="430px" data-y="200px" data-loc="Anambra"
-                          data-toggle="tooltip" data-placement="top" title="Anambra">
+                          data-toggle="tooltip" data-placement="top">
                         <span class="name">Anambra</span>
                     </span>
                     <span class="location" data-x="480px" data-y="232px" data-loc="Abia"
-                          data-toggle="tooltip" data-placement="top" title="Abia">
+                          data-toggle="tooltip" data-placement="top">
                         <span class="name">Abia</span>
                     </span>
                     <span class="location" data-x="490px" data-y="150px" data-loc="Delta"
-                          data-toggle="tooltip" data-placement="top" title="Delta">
+                          data-toggle="tooltip" data-placement="top">
                         <span class="name">Delta</span>
                     </span>
                 </div>
@@ -178,10 +179,11 @@
                     })
                 </script>
             </div>
+
         </div>
     </div>
 
-</section><section class="products bg-white p-4 pt-8 pb-8 text-center"
+</section><section class="products bg-white p-4 pt-8 pb-8 text-md-center text-left"
          style="background-image: url(images/Nigeria.svg), url(images/Nigeria.svg);
          background-repeat:  no-repeat, no-repeat;
          background-size: 600px;
@@ -200,23 +202,16 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-xs-24 col-sm-6 col-lg-16">
-                    <div style="background-image: url(images/favicon.png), url(images/favicon.png);
-                                background-repeat:  no-repeat, no-repeat;
-                             background-size: 200px;
-                             padding: 65px;
-                             background-position: left top, right bottom">
+                    <div class="videoWrapper">
                     <video
-                            id="my-player"
-                            class="video-js"
+                            id="tech-driven"
+                            class="vid video-js"
                             controls
                             preload="auto"
-                            poster="//vjs.zencdn.net/v/oceans.png"
+                            poster="/videos/poster_1.png"
                             data-setup='{}'
-                            style="max-width: 100%;"
                     >
-                        <source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4"></source>
-                        <source src="//vjs.zencdn.net/v/oceans.webm" type="video/webm"></source>
-                        <source src="//vjs.zencdn.net/v/oceans.ogv" type="video/ogg"></source>
+                        <source src="/videos/video_13.mp4" type="video/mp4"></source>
                         <p class="vjs-no-js">
                             To view this video please enable JavaScript, and consider upgrading to a
                             web browser that
@@ -230,32 +225,29 @@
             </div>
         </div>
     </div>
-</section><section class="what-we-do p-4 pt-8 pb-8" id="#what-we-do">
+</section><section class="what-we-do p-4 pt-8 pb-8" id="what-we-do-section">
     <div class="row">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-xs-24 col-md-13">
-                    <span style="">
+                <div class="col-xs-24 col-md-11">
+                        <span style="">
                         <h2 class="">What we do</h2>
                         <span class="ruler"></span>
+                    <div class="col-lg-24 hide-xs">
                         <p class="">
                             Enjoy this short infographic clip of how we work at Rensource
                         </p>
                     </span>
-                    <div class="col-lg-24 hide-xs">
                         <div class="pt-6 pb-6">
                         <video
                                 id="what-we-do"
-                                class="video-js"
+                                class="vid video-js"
                                 controls
                                 preload="auto"
-                                poster="//vjs.zencdn.net/v/oceans.png"
+                                poster="/videos/poster_1.png"
                                 data-setup='{}'
-                                style="max-width: 100%"
                         >
-                            <source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4"></source>
-                            <source src="//vjs.zencdn.net/v/oceans.webm" type="video/webm"></source>
-                            <source src="//vjs.zencdn.net/v/oceans.ogv" type="video/ogg"></source>
+                            <source src="/videos/video_13.mp4" type="video/mp4"></source>
                             <p class="vjs-no-js">
                                 To view this video please enable JavaScript, and consider upgrading to a
                                 web browser that
@@ -267,10 +259,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-24 col-md-9">
+                <div class="col-xs-24 col-md-12">
                     <div class="col-xs-24 col-sm-6 col-lg-24">
                     <div class="card mb-3">
                         <div class="card_body">
+                            <span class="fancy-number">
+                                <span class="text-color-gray-dark t-24 w-2 digit">01</span>
+                                <span class="vertical-line"></span>
+                            </span>
                             <h4 class="text-color-gray-dark">Origination & Development</h4>
                             <p>Working with a variety of stakeholders including project sponsors, regulators and Government. Rensource takes ideas from conception to bankable opportunity.
                             </p>
@@ -279,6 +275,10 @@
                 </div><div class="col-xs-24 col-sm-6 col-lg-24">
                     <div class="card mb-3">
                         <div class="card_body">
+                            <span class="fancy-number">
+                                <span class="text-color-gray-dark t-24 w-2 digit">02</span>
+                                <span class="vertical-line"></span>
+                            </span>
                             <h4 class="text-color-gray-dark">Engineering & Implementation</h4>
                             <p>
                                 In-house engineering team designs the most cost effective and appropriate solution for each project and works with various EPC firms and subcontractors for implementation.
@@ -288,6 +288,10 @@
                 </div><div class="col-xs-24 col-sm-6 col-lg-24">
                     <div class="card mb-3">
                         <div class="card_body">
+                            <span class="fancy-number">
+                                <span class="text-color-gray-dark t-24 w-2 digit">03</span>
+                                <span class="vertical-line"></span>
+                            </span>
                             <h4 class="text-color-gray-dark">Operation & Maintenance</h4>
                             <p>
                                 Active management of power grids to ensure maximum uptime.
@@ -297,6 +301,10 @@
                 </div><div class="col-xs-24 col-sm-6 col-lg-24">
                     <div class="card  mb-3">
                         <div class="card_body">
+                            <span class="fancy-number">
+                                <span class="text-color-gray-dark t-24 w-2 digit">04</span>
+                                <span class="vertical-line"></span>
+                            </span>
                             <h4 class="text-color-gray-dark">Billing & Collection</h4>
                             <p>
                                 Smart-meters and an active customer service infrastructure are augmented with mobile-wallet based transactions to handle customer collection.
@@ -306,6 +314,10 @@
                 </div><div class="col-xs-24 col-sm-6 col-lg-24">
                     <div class="card mb-3">
                         <div class="card_body">
+                            <span class="fancy-number">
+                                <span class="text-color-gray-dark t-24 w-2 digit">05</span>
+<!--                                <span class="vertical-line"></span>-->
+                            </span>
                             <h4 class="text-color-gray-dark">Value Added Service</h4>
                             <p>
                                 Using a technology enabled platform to act as a distribution channel of third-party services to the merchants we provide energy to.
@@ -324,57 +336,64 @@
             <div class="col-xs-24 col-sm-6 col-lg-7">
                     <span style="">
                         <h2>Testimonials</h2>
+                        <span class="ruler"></span>
                         <p class="">
                             At Rensource, we believe our performance is best judged by our stakeholders.
                         </p>
                     </span>
             </div>
             <div class="col-xs-24 col-sm-6 col-lg-17">
-                <div class="testimonials owl-carousel pl-4 pr-4">
-                    <div class="card" style="width: 300px">
-
-                            <img class="img-fluid" src="/images/Adesola.jpg" style="border-radius: 12px 12px 0 0">
-                            <div style="overflow: hidden;" data-href="" class="boxout1 progressive replace card_head">
-                                <img src="" class="img-fluid" alt="" style="transform: scale(1.05)">
-                            </div>
-                        <div class="card-body">
-                                <img src="" class="float-left"/>
-                                <p class="testifier">Abosede Bla</p>
-                                <p class="designation">Business Woman</p>
+                <div class="testimonials owl-carousel">
+                    <div class="card testimonial" style="width: 300px; position:relative;">
+                        <img class="img-fluid" src="/images/testimonials/Adesola.jpg" style="border-radius: 12px 12px 0 0">
+                        <div class="card-body" style="vertical-align: middle">
+                                <img src="/images/testimonials/sterling.jpg" class="float-left mr-2" style="width: 58px; height: 58px"/>
+                                <p class="testifier">Adesola Alli,</p>
+                                <p class="designation">Head, Renewable energy.
+                                    Sterling Bank</p>
                         </div>
-                    </div>
-                    <div class="card" style="width: 300px">
+                        <div class="testimony bg-yellow text-color-gray-dark">
+                            “Working with Rensource team has been seamless given their highly dedicated and professional team. We believe in the work that Rensource Energy is doing in the renewable energy space, it is because of this that Rensource Energy is first company in this space to receive local funding through “The Off-grid Power Facility Initiative” set up by the Central Bank of Nigeria (CBN) and the Rural Electrification Agency (REA).”                        </div>
+                        </div>
+                    <div class="card testimonial" style="width: 300px">
                         <img class="img-fluid" src="/images/Etop.jpg" style="border-radius: 12px 12px 0 0">
                         <div style="overflow: hidden;" data-href="" class="boxout1 progressive replace card_head">
                             <img src="" class="img-fluid" alt="" style="transform: scale(1.05)">
                         </div>
                         <div class="card-body">
-                            <img src="" class="float-left"/>
-                            <p class="testifier">Abosede Bla</p>
-                            <p class="designation">Business Woman</p>
+                            <img src="/images/testimonials/car45.jpg" class="float-left mr-2" style="width: 58px; height: 58px"/>
+                            <p class="testifier">Etop Ike</p>
+                            <p class="designation">Chief Executive Officer, Cars45</p>
                         </div>
-                    </div>
-                    <div class="card" style="width: 300px">
+                        <div class="testimony bg-yellow text-color-gray-dark">
+                            Rensource has been at the forefront of rural electrification in Nigeria through renewable energy sources, it is because of this that cars45 contracted Rensource to deploy renewable power solution infrastructure across 100 cars45 inspection stations across Nigeria. So far we have not been disappointed given the company’s exceptional customer service and dedicated team of professionals                        </div>
+                        </div>
+                    <div class="card testimonial" style="width: 300px">
                         <img class="img-fluid" src="/images/Damilola.jpg" style="border-radius: 12px 12px 0 0">
                         <div style="overflow: hidden;" data-href="" class="boxout1 progressive replace card_head">
                             <img src="" class="img-fluid" alt="" style="transform: scale(1.05)">
                         </div>
                         <div class="card-body">
-                            <img src="" class="float-left"/>
-                            <p class="testifier">Abosede Bla</p>
-                            <p class="designation">Business Woman</p>
+                            <img src="/images/testimonials/lag.jpg" class="float-left mr-2" style="width: 58px; height: 58px"/>
+                            <p class="testifier">Damilola Ogunbiyi,</p>
+                            <p class="designation">CEO,  Rural Electrification Agency(REA)</p>
                         </div>
+                        <div class="testimony bg-yellow text-color-gray-dark">
+                            Rensource Energy has been in charge of the deployment of off grid electricity solutions at various markets across the country, and we are already witnessing positive environmental and economic impacts. This is the sort of intervention we look forward to scaling across Nigeria with support from financial institutions                        </div>
                     </div>
-                    <div class="card" style="width: 300px">
+                    <div class="card testimonial" style="width: 300px">
                         <img class="img-fluid" src="/images/Abosede.jpg" style="border-radius: 12px 12px 0 0">
                         <div style="overflow: hidden;" data-href="" class="boxout1 progressive replace card_head">
                             <img src="" class="img-fluid" alt="" style="transform: scale(1.05)">
                         </div>
                         <div class="card-body">
-                            <img src="" class="float-left"/>
-                            <p class="testifier">Abosede Bla</p>
-                            <p class="designation">Business Woman</p>
+                            <img src="/images/testimonials/lag2.jpg" class="float-left mr-2" style="width: 58px; height: 58px"/>
+                            <p class="testifier">Abosede Asu,</p>
+                            <p class="designation">Business woman/shop owner
+                                Iponri Market, Lagos</p>
                         </div>
+                        <div class="testimony bg-yellow text-color-gray-dark">
+                            "My business has improved since the solar installation, my customers can sit and be comfortable inside the shop whilst making decisions about their purchases unlike before when light was erratic and customers would not sit to buy especially during the hot weather and season"                        </div>
                     </div>
                 </div>
             </div>
@@ -511,7 +530,7 @@
                                   fill="#0A090B"/>
                         </svg>
 
-                        <h4>Save Money, <br> Save the Environment!</h4>
+                        <h4 class="mt-6 mb-6">Save Money, <br> Save the Environment!</h4>
                         <p>
                             Solar hybrid systems saves you money and saves the environment
                         </p>
@@ -535,7 +554,7 @@
                     <h2 class="t-72 text-color-white">
                         12,309L
                     </h2>
-                    <p class="text-color-gray">
+                    <p class="text-color-yellow">
                         Litres of Fuel Saved
                     </p>
                 </span>
@@ -544,7 +563,7 @@
                         <h2 class="t-72 text-color-white">
                             141,211
                         </h2>
-                        <p class="text-color-gray">
+                        <p class="text-color-yellow">
                             CO2 Emmisions Saved
                         </p>
                     </span>
@@ -553,7 +572,7 @@
                         <h2 class="t-72 text-color-white">
                             141,211
                         </h2>
-                        <p class="text-color-gray">
+                        <p class="text-color-yellow">
                             CO2 Emmisions Saved
                         </p>
                     </span>
@@ -565,111 +584,134 @@
     <div class="container">
         <div class="row ">
             <div class="col-xs-24 col-sm-6 col-lg-8">
-                <h5 class="mb-4">News</h5>
+                <h5 class="mb-4 mt-6">From our News Desk</h5>
                 <div id="news" class="threadContainer">
-                    <div>
-                        <h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5>
+                    <div class="excerpt">
+                        <span class="d-block mb-2"> 20 August 2019</span>
+                        <a href="#"><h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5></a>
                         <p class="">
                             At Rensource, we believe our performance is best judged by our stakeholders.
                         </p>
-                    </div><div>
-                        <h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5>
+                    </div><div class="excerpt">
+                    <span class="d-block mb-2"> 20 August 2019</span>
+                    <a href="#"><h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5></a>
+                    <p class="">
+                        At Rensource, we believe our performance is best judged by our stakeholders.
+                    </p>
+                </div><div class="excerpt">
+                    <span class="d-block mb-2"> 20 August 2019</span>
+                    <a href="#"><h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5></a>
+                    <p class="">
+                        At Rensource, we believe our performance is best judged by our stakeholders.
+                    </p>
+                </div><div class="excerpt">
+                    <span class="d-block mb-2"> 20 August 2019</span>
+                    <a href="#"><h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5></a>
+                    <p class="">
+                        At Rensource, we believe our performance is best judged by our stakeholders.
+                    </p>
+                </div><div class="excerpt">
+                    <span class="d-block mb-2"> 20 August 2019</span>
+                    <a href="#"><h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5></a>
+                    <p class="">
+                        At Rensource, we believe our performance is best judged by our stakeholders.
+                    </p>
+                </div><div class="excerpt">
+                    <span class="d-block mb-2"> 20 August 2019</span>
+                    <a href="#"><h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5></a>
+                    <p class="">
+                        At Rensource, we believe our performance is best judged by our stakeholders.
+                    </p>
+                </div>
+                </div>
+            </div>
+            <div class="col-xs-24 col-sm-6 col-lg-8">
+                <h5 class="mb-4 mt-6">Social</h5>
+                <div id="social" class="threadContainer">
+                    <div class="excerpt">
+                        <span class="d-block mb-2"> 20 August 2019 <a href="https://facebook.com/#" target="_blank" class="p-1">
+                                <span class="social facebook duo">Facebook</span>
+                            </a></span>
+
+                        <a href="#"><h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5></a>
+
                         <p class="">
                             At Rensource, we believe our performance is best judged by our stakeholders.
                         </p>
-                    </div><div>
-                        <h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5>
+                    </div><div class="excerpt">
+                        <span class="d-block mb-2"> 20 August 2019 <a href="https://facebook.com/#" target="_blank" class="p-1">
+                                <span class="social twitter duo">Facebook</span>
+                            </a></span>
+
+                    <a href="#"><h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5></a>
+
                         <p class="">
                             At Rensource, we believe our performance is best judged by our stakeholders.
                         </p>
-                    </div><div>
-                        <h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5>
+                    </div><div class="excerpt">
+                        <span class="d-block mb-2"> 20 August 2019 <a href="https://facebook.com/#" target="_blank" class="p-1">
+                                <span class="social instagram duo">Facebook</span>
+                            </a></span>
+
+                    <a href="#"><h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5></a>
+
                         <p class="">
                             At Rensource, we believe our performance is best judged by our stakeholders.
                         </p>
-                    </div><div>
-                        <h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5>
-                        <p class="">
-                            At Rensource, we believe our performance is best judged by our stakeholders.
-                        </p>
-                    </div><div>
-                        <h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5>
+                    </div><div class="excerpt">
+                        <span class="d-block mb-2"> 20 August 2019 <a href="https://facebook.com/#" target="_blank" class="p-1">
+                                <span class="social instagram duo">Facebook</span>
+                            </a></span>
+
+                    <a href="#"><h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5></a>
+
                         <p class="">
                             At Rensource, we believe our performance is best judged by our stakeholders.
                         </p>
                     </div>
+
                 </div>
             </div>
             <div class="col-xs-24 col-sm-6 col-lg-8">
-                <h5 class="mb-4">Social</h5>
-                <div id="social" class="threadContainer">
-                    <div>
-                        <h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5>
-                        <p class="">
-                            At Rensource, we believe our performance is best judged by our stakeholders.
-                        </p>
-                    </div><div>
-                    <h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5>
-                    <p class="">
-                        At Rensource, we believe our performance is best judged by our stakeholders.
-                    </p>
-                </div><div>
-                    <h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5>
-                    <p class="">
-                        At Rensource, we believe our performance is best judged by our stakeholders.
-                    </p>
-                </div><div>
-                    <h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5>
-                    <p class="">
-                        At Rensource, we believe our performance is best judged by our stakeholders.
-                    </p>
-                </div><div>
-                    <h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5>
-                    <p class="">
-                        At Rensource, we believe our performance is best judged by our stakeholders.
-                    </p>
-                </div><div>
-                    <h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5>
-                    <p class="">
-                        At Rensource, we believe our performance is best judged by our stakeholders.
-                    </p>
-                </div>
-                </div>
-            </div>
-            <div class="col-xs-24 col-sm-6 col-lg-8">
-                <h5 class="">Press Releases and News Articles</h5>
+                <h5 class="mb-4 mt-6">Press Releases and News Articles</h5>
                 <div id="press" class="threadContainer">
-                    <div>
-                        <h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5>
+                    <div class="excerpt">
+                        <span class="d-block mb-2"> 20 August 2019</span>
+                        <a href="#"><h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5></a>
                         <p class="">
                             At Rensource, we believe our performance is best judged by our stakeholders.
                         </p>
-                    </div><div>
-                    <h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5>
-                    <p class="">
-                        At Rensource, we believe our performance is best judged by our stakeholders.
-                    </p>
-                </div><div>
-                    <h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5>
-                    <p class="">
-                        At Rensource, we believe our performance is best judged by our stakeholders.
-                    </p>
-                </div><div>
-                    <h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5>
-                    <p class="">
-                        At Rensource, we believe our performance is best judged by our stakeholders.
-                    </p>
-                </div><div>
-                    <h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5>
-                    <p class="">
-                        At Rensource, we believe our performance is best judged by our stakeholders.
-                    </p>
-                </div><div>
-                    <h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5>
-                    <p class="">
-                        At Rensource, we believe our performance is best judged by our stakeholders.
-                    </p>
-                </div>
+                    </div><div class="excerpt">
+                        <span class="d-block mb-2"> 20 August 2019</span>
+                        <a href="#"><h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5></a>
+                        <p class="">
+                            At Rensource, we believe our performance is best judged by our stakeholders.
+                        </p>
+                    </div><div class="excerpt">
+                        <span class="d-block mb-2"> 20 August 2019</span>
+                        <a href="#"><h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5></a>
+                        <p class="">
+                            At Rensource, we believe our performance is best judged by our stakeholders.
+                        </p>
+                    </div><div class="excerpt">
+                        <span class="d-block mb-2"> 20 August 2019</span>
+                        <a href="#"><h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5></a>
+                        <p class="">
+                            At Rensource, we believe our performance is best judged by our stakeholders.
+                        </p>
+                    </div><div class="excerpt">
+                        <span class="d-block mb-2"> 20 August 2019</span>
+                        <a href="#"><h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5></a>
+                        <p class="">
+                            At Rensource, we believe our performance is best judged by our stakeholders.
+                        </p>
+                    </div><div class="excerpt">
+                        <span class="d-block mb-2"> 20 August 2019</span>
+                        <a href="#"><h5 class="text-color-yellow">Rensource raises $3.5m to take affordable renewable energy ...</h5></a>
+                        <p class="">
+                            At Rensource, we believe our performance is best judged by our stakeholders.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -677,7 +719,7 @@
 </section>
 
 
-            <footer style="color:#B0B0B0;background-color: #282828" class="pt-6 t-14 leading-5">
+            <footer style="color:#B0B0B0;background-color: #282828; position: relative" class="pt-6 t-14 leading-5">
     <div class="container">
         <div class="row justify-content-between" style="padding: 10px 0; padding-bottom: 20px;">
             <div class="col-lg-8 text-center text-md-left order-2 order-sm-1">
@@ -720,7 +762,10 @@
                 </nav>
                 <p class="show-xs mt-2">©2019 Rensource Limited. All Rights Reserved.</p>
             </div>
-            <div class="col-lg-8 d-flex text-center text-md-left order-3" style="flex-direction: column; align-items: flex-end">
+            <span id="toTop" class="toTop" onclick="window.scrollTo({top: 0,left: 0,behavior: 'smooth'})">
+                <img src="/images/toTop.svg" class="img-fluid">
+            </span>
+            <div class="col-lg-8 d-flex text-center text-md-left order-3" style="flex-direction: column;">
                 <div>
                     <h3 class="footer-h">Also connect with us on social media</h3>
                     <p style="display: inline-block;">

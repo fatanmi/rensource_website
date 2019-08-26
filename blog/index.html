@@ -62,19 +62,19 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="aboutUs" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         About Us
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="/#what-we-do">What we do</a>
+                    <div class="dropdown-menu shadow-sm" aria-labelledby="aboutUs">
+                        <a class="dropdown-item" href="/#what-we-do-section" data-target="what-we-do-section" >What we do</a>
                         <a class="dropdown-item" href="/mission">Vision & Mission</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="company" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Company
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <div class="dropdown-menu shadow-sm" aria-labelledby="company">
                         <a class="dropdown-item" href="/history">History</a>
                         <a class="dropdown-item" href="/leadership">Leadership</a>
                     </div>
@@ -99,7 +99,7 @@
   </div>
 
 <div>
-</div>            <footer style="color:#B0B0B0;background-color: #282828" class="pt-6 t-14 leading-5">
+</div>            <footer style="color:#B0B0B0;background-color: #282828; position: relative" class="pt-6 t-14 leading-5">
     <div class="container">
         <div class="row justify-content-between" style="padding: 10px 0; padding-bottom: 20px;">
             <div class="col-lg-8 text-center text-md-left order-2 order-sm-1">
@@ -142,7 +142,10 @@
                 </nav>
                 <p class="show-xs mt-2">©2019 Rensource Limited. All Rights Reserved.</p>
             </div>
-            <div class="col-lg-8 d-flex text-center text-md-left order-3" style="flex-direction: column; align-items: flex-end">
+            <span id="toTop" class="toTop" onclick="window.scrollTo({top: 0,left: 0,behavior: 'smooth'})">
+                <img src="/images/toTop.svg" class="img-fluid">
+            </span>
+            <div class="col-lg-8 d-flex text-center text-md-left order-3" style="flex-direction: column;">
                 <div>
                     <h3 class="footer-h">Also connect with us on social media</h3>
                     <p style="display: inline-block;">
