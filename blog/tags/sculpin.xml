@@ -3,14 +3,14 @@
     <title><![CDATA[Rensource]]></title>
     <link href="/blog/tags/sculpin.xml" rel="self"/>
     <link href="/"/>
-    <updated>2019-08-26T21:19:43+00:00</updated>
+    <updated>2019-08-28T05:42:07+00:00</updated>
     <id>/</id>
         <generator uri="http://sculpin.io/">Sculpin</generator>
             <entry>
             <title type="html"><![CDATA[Happy Birthday Sculpin!]]></title>
-            <link href="/blog/2011/12/20/happy-birthday-sculpin/"/>
+            <link href="/happy-birthday-sculpin.html"/>
             <updated>2011-12-20T00:00:00+00:00</updated>
-            <id>/blog/2011/12/20/happy-birthday-sculpin/</id>
+            <id>/happy-birthday-sculpin.html</id>
             <content type="html"><![CDATA[<p>The first commit to the Sculpin repository was made on December 20th, 2011.
 What a trip since then!</p>
 
