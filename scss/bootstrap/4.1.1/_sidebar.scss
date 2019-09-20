@@ -1,0 +1,23 @@
+.sidebar {
+    min-height: 100vh;
+    height: 100%;
+    background-color: $primary;
+    padding: 20px;
+    & .nav-link {
+        background: #c10e14;
+        border-radius: $border-radius;
+        color: white;
+        padding: 1em 2em;
+        margin: 0.6em 0;
+    }
+    & .nav--icon {
+        color: white;
+    }
+    & .nav-link:hover {
+        background: white;
+        color: #c10e14;
+        .nav--icon {
+            color: #c10e14;
+        }
+    }
+}

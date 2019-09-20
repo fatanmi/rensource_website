@@ -1,0 +1,92 @@
+.avatar {
+  &--sm {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+  }
+}
+
+.user-bucket {
+    height: 40px;
+    &::after {
+      display: table;
+      clear: both;
+    }
+}
+
+.event {
+    &--mini {
+        max-width: 100%;
+    }
+    &--title {
+        color: white;
+        display: block;
+        background: rgba(51, 51, 51, 0.376);
+    }
+    &--card {
+        border-radius: $border-radius;
+        overflow: hidden;
+        background: white;
+    }
+    &--masthead {
+        .image {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    &--desc {
+        padding: 2em 1em;
+    }
+    &--detail {
+        font-weight: 600;
+        font-size: 2em;
+        background: #f3f3f3;
+        border-radius: $border-radius;
+        padding: 1em;
+        margin-bottom: 0.5em;
+    }
+}
+
+.miniBar {
+    position: relative;
+    border-radius: $border-radius;
+    overflow: hidden;
+    & .event--title {
+        bottom: 0px;
+        position: absolute;
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+    .ant-time-picker, .ant-calendar-picker {width: 100% !important; font-size: 16px};
+
+    .anticon svg {
+        vertical-align: unset;
+    }
+
+    .transparentBtn {
+        background: transparent;
+        border: none;
+    }
+
+    .transparentBtn:focus, .transparentBtn:active{
+        outline: none;
+    }
+
+    .iJ_ {
+        position: absolute; top: 8%;
+        transition: position 2s;
+    }
+    .edittable {
+        border: 1px solid #eee; 
+        padding: 20px
+    }
+    .edittable:hover {
+        border-color: rgb(202, 202, 202);
+    }
+
+    .edittable:focus {
+        outline: none;
+        border-color: rgb(202, 202, 202);
+    }
