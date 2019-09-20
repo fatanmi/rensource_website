@@ -1,0 +1,318 @@
+
+// Core variables and mixins
+@import "3.1.4/variables";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins"
+
+// Reset and dependencies
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/normalize"
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/print"
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/glyphicons"
+
+// Core CSS
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding"
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/type"
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/code"
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/grid"
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/tables"
+
+@import "3.1.4/forms"
+@import "3.1.4/buttons"
+
+// Components
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/component-animations"
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/dropdowns"
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/button-groups"
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/input-groups"
+
+@import "3.1.4/navs"
+@import "3.1.4/navbar"
+
+
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/breadcrumbs"
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/pagination"
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/pager"
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/labels"
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/badges"
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/jumbotron"
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/thumbnails"
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/alerts"
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/progress-bars"
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/media"
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/list-group"
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/panels"
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-embed"
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/wells"
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/close"
+
+// Components w/ JavaScript
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/modals"
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/tooltip"
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/popovers"
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/carousel"
+
+// Utility classes
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/utilities"
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities"
+
+p 
+    margin: 20px 0;
+img 
+    margin: 12px 0;
+    max-width: 100%;
+
+section
+    padding: 40px 0;
+
+.nav-footer > li > a 
+    font-size: 0.8em;
+
+.carousel-control
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 5%;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    /* text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); */
+    background-color: transparent;
+.carousel-control.right, .carousel-control.left 
+    background-image: none;
+
+.contact 
+    background: #f0f7ff;
+    padding: 60px 120px;
+    
+
+.navbar 
+    padding: 15px 0;
+
+
+.divider.gray 
+    border-color: #dedada5b;;
+
+.divider 
+    height: 1px;
+    border-bottom: 1px solid #f1f2f5;
+    display: block;
+
+.call-us 
+    color: white;
+    padding: 8px 20px !important;
+    margin-top: 4px;
+    text-transform: uppercase;
+
+.call-us:hover 
+    background: #0a64d1 !important;
+
+.carousel-indicators.text 
+    position: absolute;
+    bottom: -60px;
+    left: 30%;
+    z-index: 15;
+    width: 60%;
+    margin-left: -30%;
+    padding-left: 0;
+    list-style: none;
+    text-align: left;
+
+h2 
+    font-weight: 700;
+
+.input-ico 
+    position: absolute; 
+    left: 10px; 
+    top: 18px; 
+    color: #6c6b6b;
+    z-index: 20
+
+.pop-schools
+    background: #feefe8;
+
+.scholarships
+    background: url(/images/Scholarship.jpg) no-repeat no-repeat; 
+    background-position-x: right;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    background-size: contain;   
+    background-color: whitesmoke;
+
+.image-box
+    margin: 12px; 
+    border-radius: 16px;
+    overflow: hidden;    
+    width: 180px;
+    height: 210px; 
+    position: relative; 
+    color: white;
+    display: inline-block;
+
+.image-box .title
+    z-index: 140;
+    position: absolute; 
+    font-size: 18px; 
+    left: 20px;
+    top: 6px;
+    max-width: 140px;
+    text-align: left;
+    word-wrap: break-word;
+
+.image-box .loc
+    z-index: 140;
+    position: absolute; 
+    left: 18px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    bottom: 0px;
+
+.icon-input
+    width: 28%; 
+    position: relative;
+
+.overlay
+    background-color: rgba(0,0,0,0.4); 
+    width: 240px;
+    height: 260px;
+    left: 0;
+    position: absolute; 
+    z-index: 10 
+
+
+.school-img
+    margin: 0;
+    image-rendering: pixelated;
+    transform: scale(2.3);
+    top: 42px;
+    position: relative;
+
+
+.how-h
+    font-size: 30px;
+    font-weight: 700;
+    color: #4f4f4f;
+
+
+.nav.copyline, .nav.copyline > li > a, .nav.copyline > li 
+    display: inline-block !important;
+    color: white;
+    font-size: 14px;
+
+.nav > li > a
+    color: #c4d1e4;
+    font-family: 'Montserrat', sans-serif;
+
+.nav > li > a:hover, .nav > li > a:focus 
+    box-shadow: 0 4px  black
+
+.navbar-nav > li > a, .nav > li > a
+    transition: all 0.2s
+ 
+.navbar-nav .nav > li > a:hover 
+    box-shadow: 0 4px  #c4d1e4
+    color: #ddd
+
+
+
+
+.sep
+    width: 2px;
+    height: 10px;
+    background: white;
+    display: inline-block;
+
+.copyright
+    font-size: 14px;
+
+.footer-links-h
+    font-weight: 700;
+    font-size: 18px;
+
+.preloader
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: white;
+    z-index: 20000;
+
+.owl-nav
+    position: relative;
+    top: -200px;
+    font-size: 96px;
+    font-weight: 300;
+    color: orange;
+
+.owl-next 
+    position: absolute;
+    right: -76px;
+
+.owl-prev 
+    position: absolute;
+    left: -76px;
+
+.scrolling 
+    background: white;
+    box-shadow: 0 1px 6px rgba(12, 13, 14, 0.1), 0 1px 8px rgba(12, 13, 14, 0.04), 0 4px 20px rgba(0, 0, 0, 0.035), 0 1px 6px rgba(12, 13, 14, 0.025)
+
+.navbar-inverse.inner, .navbar-inverse:hover
+    background: white;
+    .logo
+        background: url(/images/schoolfinder_logo.svg);
+        background-repeat: no-repeat;
+        text-indent: -9999px;
+        margin: 0;
+    > li > a:hover
+        color: #333;
+.navbar-inverse:hover .navbar-nav > li > a:hover, .navbar-inverse:hover .navbar-nav > li > a:focus , .navbar-inverse:hover .navbar-nav > li > a
+    color: #333;
+    background-color: transparent;
+
+.navbar-inverse 
+    transition: background-color 0.6s;
+    border-color: transparent;
+
+
+.navbar-inverse.scrolling .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus 
+    color: #333;
+    background-color: transparent;
+
+.navbar-inverse.scrolling .navbar-nav > li > a , .navbar-inverse.inner .navbar-nav > li > a
+    color: #333;
+
+*:focus
+    outline: none;
+
+body
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+
+
+
+.label
+    color: #333;
+    text-transform: capitalize;
+    padding: 0;
+
+.select2
+    z-index: 10
+
+.select2-container--bootstrap .select2-selection--single .select2-selection__rendered , .select2-container--bootstrap .select2-selection--multiple .select2-search--inline .select2-search__field
+    padding-left: 20px;
+
+.select2-container--bootstrap .select2-selection--multiple .select2-selection__rendered
+    line-height: 2.4;
+    padding-left: 20px;
+
+.navbar-inverse:hover
+    background-color: white;
+// .navbar-inverse:hover {
+//     background-color: #1f4670;
+// }
+
+a 
+    font-family: 'Montserrat', sans-serif;

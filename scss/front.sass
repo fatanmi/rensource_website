@@ -1,0 +1,29 @@
+@import "bootstrap/bootstrap4"
+@import "custom/custom"
+
+
+.navbar-brand
+    text-indent: -99999px
+    background:  none
+    background-size: contain
+    background-color: $gray-900
+    width: 300px
+    position: relative
+
+.dropdown-menu
+    left: unset
+    right: 0
+    display: none
+    animation-name: destroyDown
+    animation-fill-mode: forwards
+    animation-duration: 0.4s
+    animation-timing-function: cubic-bezier(0.23,0.5,0.6,1)
+
+.dropdown-menu.show
+    animation-name: revealUp
+    animation-fill-mode: backwards
+    animation-duration: 0.4s
+    animation-timing-function: cubic-bezier(0.23,0.5,0.6,1)
+
+
+
