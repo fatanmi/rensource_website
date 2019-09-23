@@ -6,20 +6,12 @@ const token = "AAAAAAAAAAAAAAAAAAAAAJoCwwAAAAAAJJ0%2BvUEySDOOb947k4klmuQgWW0%3DS
 let tt = `Bearer ${token}`;
 
 const twitterInstance = axios.create({
-    baseURL: 'https://api.twitter.com/1.1',
-    headers: {
-        'Authorization': tt,
-        'responseType': 'json',
-        'Cache-Control': 'no-cache',
-        'Content-Type': 'aplication/json'
-    }
+    baseURL: 'https://xser.2switches.com'
 });
 
 function handleSuccessResponse(response) {
-    const { message } = response;
-    // console.log(response);
-    toast.success(message);
-    return response.data.data;
+    console.log(response);
+    return response.data.body;
 }
 
 function handleFailureResponse(err) {
@@ -34,12 +26,6 @@ function handleFailureResponse(err) {
 }
 
 export const getTwitterTimeline = (size) => {
-    return twitterInstance.get('/statuses/user_timeline.json',
-        {params: {
-            screen_name: 'rensourceenergy',
-            count: size
-        }
-    })
-        .then(handleSuccessResponse)
+    return twitterInstance.get('/home').then(handleSuccessResponse)
         .catch(handleFailureResponse);
 };

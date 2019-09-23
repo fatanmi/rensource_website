@@ -70,7 +70,7 @@ class ManageArticleType extends React.Component {
     componentDidMount() {
         getArticleTypes().then(articles => {
             this.setState((state) => ({
-                articles: arrToObj(articles, 'articleId')
+                articles: articles ? arrToObj(articles, 'articleId') : {}
             }))
         })
     }

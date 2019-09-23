@@ -1,5 +1,5 @@
 import React from 'react';
-import {getArticles} from "../requests";
+import {getPublishedArticles} from "../requests";
 import {arrToObj} from "./helpers";
 import {api} from "../requests/routes";
 import moment from "moment";
@@ -7,10 +7,10 @@ import moment from "moment";
 export default class NewsPage extends React.Component {
     render() {
         let articlesArr = Object.values(this.state.articles);
-        articlesArr.sort((a,b) => b.date > a.date);
+        articlesArr.sort((a,b) => moment(b.publishedDate).isBefore(a.publishedDate));
 
         let articlesList = articlesArr ? articlesArr.map( (article, i) => {
-                const date = article && article.date || Date.now();
+                const date = article && article.publishedDate || Date.now();
                 return <div className="col-xs-24 col-lg-7 mb-5 post" key={i}>
                             <div className="post-mini">
                                 <img src={ article.pictureUrl ? api.article.get.articleImage(article.pictureUrl) : '/images/blog/mill.jpg' } />
@@ -63,7 +63,7 @@ export default class NewsPage extends React.Component {
 
     componentDidMount() {
         const { page, size } = this.state;
-        getArticles(page,size).then(articles => {
+        getPublishedArticles(page,size).then(articles => {
             this.setState((state) => ({
                 articles: arrToObj(articles)
             }))
@@ -75,7 +75,7 @@ export default class NewsPage extends React.Component {
             this.setState({
                 loading: true
             });
-            getArticles(page,this.state.size).then(articles => {
+            getPublishedArticles(page,this.state.size).then(articles => {
                 let newArticles = arrToObj(articles);
                 this.setState((state) => ({
                     articles: { ...newArticles, ...state.articles },
