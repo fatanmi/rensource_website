@@ -10,7 +10,7 @@ export default class Article extends React.Component {
     render() {
         const { article } = this.state;
         // console.log(api.article.get.articleImage(article.pictureUrl));
-        const date = article && article.date || Date.now();
+        const date = article && article.publishedDate || Date.now();
 
         const articleUI = article ? <article className="col-lg-16 col-xs-24 bg-white p-6">
             <h4 className="">{ article.subject }</h4>

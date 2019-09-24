@@ -9,7 +9,7 @@ export default class SimilarArticles extends React.Component {
     render() {
 
         let articlesArr = Object.values(this.state.articles);
-        articlesArr.sort((a, b) => b.date > a.date);
+        articlesArr.sort((a, b) => b.publishedDate < a.publishedDate);
 
         return articlesArr ?
             <React.Fragment>
@@ -19,7 +19,7 @@ export default class SimilarArticles extends React.Component {
                 <div className="row justify-content-between">
                     {
                         articlesArr.map((article, i) => {
-                            const date = article && article.date || Date.now();
+                            const date = article && article.publishedDate || Date.now();
                             return <div className="col-xs-24 col-lg-7 mb-5 post" key={i}>
                                 <div className="post-mini">
                                     <img

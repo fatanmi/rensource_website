@@ -8,6 +8,7 @@ export const api = {
             single: (id) => `${host}/${path}/articles/${id}`,
             articles_by_type: (type, page, size) => `${host}/${path}/articles?page=${page}&size=${size}&type=${type}`,
             all: (page, size) => `${host}/${path}/articles/all?page=${page}&size=${size}`,
+            due: (page, size) => `${host}/${path}/articles/due?page=${page}&size=${size}`,
             articleImage: (pictureUrl) => `${host}/${path}/get-article-image?pictureUrl=${pictureUrl}`
         },
         post: {

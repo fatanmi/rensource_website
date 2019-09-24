@@ -1,5 +1,5 @@
 import React from "react";
-import {getArticleTypes, postArticle, postArticleWithImage, putArticleWithImage} from '../../requests';
+import {getArticleTypes, createArticle, updateArticle} from '../../requests';
 import { Button, Input, Row, Col, Label, Form, FormGroup } from 'reactstrap';
 import Editor from "./Editor";
 import {arrToObj} from "../helpers";
@@ -11,7 +11,7 @@ class Article extends React.Component {
     state = {
         articleTypes: {},
         loading: false,
-        date: null,
+        publishedDate: null,
         body: '',
     };
 
@@ -64,15 +64,34 @@ class Article extends React.Component {
                                 </Label>
                                 <div>
                                 <SingleDatePicker
-                                    date={this.state.date}
-                                    onDateChange={date => this.setState({ date })}
+                                    daySize={39}
+                                    date={this.state.publishedDate}
+                                    onDateChange={date => this.setState({ publishedDate: date })}
                                     focused={this.state.focused}
+                                    isDayBlocked={() => false}
                                     onFocusChange={({ focused }) => this.setState({ focused })}
-                                    id="publishDate"
+                                    id="publishedDate"
                                     numberOfMonths={1}
+                                    disabled={false}
+                                    initialDate={'null'}
+                                    isDayHighlighted={ () => false}
+                                    autoFocus
+                                    // enableOutsideDays={true}
+                                    isOutsideRange={() => false}
+
+
+                                    // initialVisibleMonth={() => moment().subtract(2, "M")}
                                 />
                                 </div>
                             </FormGroup>
+                                {/*<FormGroup>*/}
+                                {/*    <Label for="featured">*/}
+                                {/*        Featured?*/}
+                                {/*    </Label>*/}
+                                {/*    <div>*/}
+                                {/*        <input type={'checkbox'} name={'featured'} id={'featured'} />*/}
+                                {/*    </div>*/}
+                                {/*</FormGroup>*/}
                             <FormGroup>
                                 <Label for="file">
                                     Featured Image
@@ -83,7 +102,7 @@ class Article extends React.Component {
                                 <Label for="pictureUrl">
                                     Picture URL
                                 </Label>
-                                <Input name='pictureUrl' readonly disabled type="text" id="pictureUrl" value={article ? article.pictureUrl : ""}/>
+                                <Input name='pictureUrl' readonly type="text" id="pictureUrl" value={article ? article.pictureUrl : ""}/>
                             </FormGroup>
                             <button type="submit" className="btn btn-primary" disabled={this.state.loading}>
                                 { this.state.loading ? 'Loading...' : this.props.article ? "Update" : "Create" }
@@ -103,10 +122,15 @@ class Article extends React.Component {
                 articleTypes: arrToObj(articles, 'articleId')
             }));
         });
-        article ? this.setState({
-            date: moment(article.date)
+        article ? this.setState((prevState) => {
+           return {
+               ...prevState,
+               ...article,
+               publishedDate: moment(article.publishedDate),
+               body: article.body
+           }
         }) : this.setState({
-            date: moment()
+            publishedDate: moment()
         });
     }
 
@@ -117,10 +141,11 @@ class Article extends React.Component {
     };
 
     addArticle = payload => {
+
         this.setState({
             loading: true
         });
-        postArticleWithImage(payload, 'file').then((res) => {
+        createArticle(payload, 'file').then((res) => {
             this.props.onNewArticle(res);
             this.setState({
                 loading: false
@@ -129,32 +154,34 @@ class Article extends React.Component {
     };
 
     handleArticleUpdate = payload => {
-        putArticleWithImage(payload, 'file').then((res) => {
+        updateArticle(payload, 'file').then((res) => {
             this.props.onUpdateArticle(res);
         });
     };
 
     submit = e => {
         e.preventDefault();
-        let {date, body} = this.state;
+        let {publishedDate, createdDate, body} = this.state;
+        // alert(JSON.stringify(this.state));
+        // return;
+
         let updateKey = this.props.updateKey;
         let formData = new FormData(e.target);
-
-        // alert(JSON.stringify(this.state));
-        //
-        // // ArticleSchema.isValid().then(() => {
-        // //
-        // // });
 
         updateKey ? formData.append('id', updateKey) : null;
         let payload = {};
         for (let entry of formData) {
+            if(entry[0] === 'file' && entry[1].name === ''){
+                continue;
+            }
             payload[entry[0]] = entry[1]
         }
-        payload.date = date;
+        payload.publishedDate = publishedDate;
+        createdDate ? payload.createdDate = createdDate : payload.createdDate = new Date();
         payload.body = body;
 
         // alert(JSON.stringify(payload));
+
         updateKey
             ? this.handleArticleUpdate(payload)
             : this.addArticle(payload);

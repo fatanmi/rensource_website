@@ -10,7 +10,7 @@ class ManageRSS extends React.Component {
     render() {
         let articlesArr = Object.values(this.state.articles);
 
-        let articlesList = articlesArr ? articlesArr.map(item => (
+        let articlesList = Array.isArray(articlesArr) ? articlesArr.map(item => (
             <tr key={item.id}>
                 <td>
                     {item.subject}
@@ -88,7 +88,7 @@ class ManageRSS extends React.Component {
         const { page, size } = this.state;
         getFeeds(page,size).then(articles => {
             this.setState((state) => ({
-                articles: arrToObj(articles)
+                articles: articles ? arrToObj(articles) : {}
             }))
         })
     }
