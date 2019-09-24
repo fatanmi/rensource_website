@@ -1,5 +1,5 @@
 import React from 'react';
-import { getArticles } from "../requests";
+import { getPublishedArticles } from "../requests";
 import moment from "moment";
 
 export default class ArticlesBucket extends React.Component {
@@ -7,7 +7,7 @@ export default class ArticlesBucket extends React.Component {
     render() {
         const { list } = this.state;
         return list ? list.map((elem, i) => {
-            const date = elem && elem.date || Date.now();
+            const date = elem && elem.publishedDate || Date.now();
             return elem ? <div className="excerpt" key={i}>
                 <span className="d-block mb-2"> {moment(date).format("Do MMMM YYYY")} </span>
                 <a href={`/single/index.html?r=${elem.id}`}>
@@ -26,7 +26,7 @@ export default class ArticlesBucket extends React.Component {
         list: null
     };
     componentDidMount() {
-        getArticles(1,6).then((data) => {
+        getPublishedArticles(1,6).then((data) => {
             this.setState({
                 list: data
             })

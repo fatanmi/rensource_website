@@ -10,8 +10,9 @@ export default class SocialBucket extends React.Component {
             const date = elem && elem.created_at || Date.now();
             return elem ? <div className="excerpt" key={i}>
                 <span className="d-block mb-2">
-                    {moment(date).format("Do MMMM YYYY")}
-                    <a href={"https://twitter.com/" + elem.user.screen_name + elem.id } target="_blank" className="p-1">
+                    {/*{moment(date).format("Do MMMM YYYY")}*/}
+                    {elem.created_at}
+                    <a href={"https://twitter.com/" + elem.user.screen_name + '/status/' + elem.id_str } target="_blank" className="p-1">
                         <span className="social twitter duo">Twitter</span>
                     </a>
                 </span>

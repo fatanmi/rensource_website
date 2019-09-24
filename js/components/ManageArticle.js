@@ -4,6 +4,7 @@ import { Button, Modal, ModalBody, ModalHeader, Table, Input } from 'reactstrap'
 import {deleteArticle, getArticles, getArticleTypes} from "../requests";
 import { arrToObj } from "./helpers"
 import { ToastContainer } from "react-toastify";
+import moment from "moment";
 
 class ManageArticle extends React.Component {
 
@@ -20,7 +21,7 @@ class ManageArticle extends React.Component {
                     {item.subject}
                 </td>
                 <td>
-                    {item.date}
+                    {item.publishedDate && moment(item.publishedDate).format('Do MM YYYY')}
                 </td>
                 <td>
                     <button onClick={() => this.edit(item.id)} className={"btn-link"}>Edit</button>
@@ -94,7 +95,7 @@ class ManageArticle extends React.Component {
         const { page, size } = this.state;
         getArticles(page,size).then(articles => {
             this.setState((state) => ({
-                articles: arrToObj(articles),
+                articles: articles ? arrToObj(articles) : {},
                 count: size
             }))
         });
