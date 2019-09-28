@@ -25,7 +25,7 @@ export default class NewsPage extends React.Component {
                     <div className="row justify-content-center mb-7 no-gutters">
                         <div className="col-xs-24 col-lg-16">
                             <div style={{width: "100%", overflow: "hidden"}}>
-                                <img src="/images/blog/hero-1.jpg" className="w-100"/>
+                                <img src="/images/blog/hero.jpg" className="w-100"/>
                             </div>
                         </div>
                         <div className="col-xs-24 col-lg-8">
