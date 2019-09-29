@@ -15,7 +15,7 @@ export default class Article extends React.Component {
         const articleUI = article ? <article className="col-lg-16 col-xs-24 bg-white p-6">
             <h4 className="">{ article.subject }</h4>
             <span className="text-color-yellow d-block mt-4 mb-4">{  moment(date).format("Do MMMM YYYY") }</span>
-            <Social />
+            {/*<Social />*/}
             <img src={ article.pictureUrl ? api.article.get.articleImage(article.pictureUrl) : '/images/bustle.jpg' } className="img-fluid mb-3" />
             <div dangerouslySetInnerHTML={{__html: article.body}} />
         </article> : null;

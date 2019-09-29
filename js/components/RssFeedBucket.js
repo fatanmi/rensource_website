@@ -10,7 +10,7 @@ export default class RssFeedBucket extends React.Component {
             const date = elem && elem.date || Date.now();
             return elem ? <div className="excerpt" key={i}>
                 <span className="d-block mb-2"> {moment(date).format("Do MMMM YYYY")} </span>
-                <a href={elem.url}>
+                <a href={elem.url} target={'_blank'}>
                     <h5 className="text-color-yellow">
                         { elem.subject }
                     </h5>

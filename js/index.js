@@ -11,10 +11,8 @@ import "bootstrap/js/src/carousel";
 import "bootstrap/js/src/collapse";
 import $ from "jquery";
 import "./app/forms";
-import "./app/toastr";
 import "./app/owl";
 import "./app/video";
-import "./app/alerts";
 import PerfectScrollbar from "perfect-scrollbar";
 import "perfect-scrollbar/css/perfect-scrollbar.css";
 import 'react-toastify/dist/ReactToastify.css';
@@ -25,6 +23,7 @@ import {
     RssFeedBucket,
     SocialBucket,
     Article,
+    Media,
     NewsPage, ManageArticle, ManageArticleType, ManageRSS } from './components';
 
 
@@ -38,6 +37,7 @@ let news = d.getElementById("newspage");
 let managerss = d.getElementById("managerss");
 let managearticle = d.getElementById("managearticle");
 let managearticletype = d.getElementById("managearticletype");
+let media = d.getElementById("media");
 
 if(rssfeed_bucket){
     ReactDOM.render(<RssFeedBucket />, rssfeed_bucket)
@@ -65,6 +65,10 @@ if(managearticletype){
 
 if(managerss){
     ReactDOM.render(<ManageRSS />, managerss)
+}
+
+if(media){
+    ReactDOM.render(<Media />, media)
 }
 
 $(document).ready(function() {
