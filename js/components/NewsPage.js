@@ -30,11 +30,9 @@ export default class NewsPage extends React.Component {
                         </div>
                         <div className="col-xs-24 col-lg-8">
                             <div className="p-6 bg-gray-dark h-100">
-                                <a href="/single/index.html"><h2 className="text-color-yellow t-18">Turning Leads Into Guests With
-                                    Content&UX</h2></a>
+                                <a href="/history/index.html" className="text-color-yellow t-18" style={{ fontWeight: 600 }}>Solar hybrid systems saves you money and saves the environment</a>
                                 <p className="text-color-light">
-                                    The goal of every tourist website is to turn potential leads into guests by guidinThe goal of
-                                    every tourist website is to turn potential leads into guests by guidin....
+                                    Rensource uses standardized solar-hybrid systems, installed at the customer’s premises, generating and storing electricity.
                                 </p>
                             </div>
                         </div>
