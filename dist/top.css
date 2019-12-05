@@ -239,6 +239,11 @@ clip-path: polygon(0 0, 99% 0, 100% 82%, 0 100%);
     color: #000
 }
 
+.white-input input[type=text] {
+    border-bottom: 1px solid #FFF;
+    color: white;
+}
+
 .special-container {
     margin-left: 3%;
     margin-right: 10%
