@@ -139,6 +139,14 @@ font-size: 19px;
 
 }
 
+
+@media only screen and (max-width: 768px) {
+    .clip-me-6 {
+        clip-path: polygon(0 0, 100% 0, 100% 81%, 0 100%);
+    }
+  }
+
+
 .clip-me-6 img {
     width: 110px;
     margin-bottom: 20px;
@@ -156,6 +164,18 @@ font-size: 18px
     min-height: 400px;
     color: #F2C553
 }
+
+@media only screen and (max-width: 768px) {
+    .clip-me-7 {
+        margin-top: -25%;
+    }
+  }
+
+  @media only screen and (width: 768px) {
+    .clip-me-7 {
+        margin-top: -15%;
+    }
+  }
 
 .clip-me-7 img {
     width: 110px;
@@ -185,8 +205,27 @@ font-size: 18px;
 
 .clip-me-9 {
 clip-path: polygon(0 0, 99% 0, 100% 82%, 0 100%);
-
 }
+
+.leader-margin {
+    margin-top: -9%;
+}
+
+@media only screen and (max-width: 768px) {
+    .clip-me-9 {
+        clip-path: polygon(0 0, 99% 0, 100% 92%, 0 100%);
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .leader-margin {
+        margin-top: -70%;
+    }
+    .clip-me-1{
+        clip-path: polygon(0 9%, 100% 0, 100% 100%, 0 95%);
+    }
+  }
+
 .height-85-vh {
     min-height: 85vh
 }
