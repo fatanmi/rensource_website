@@ -141,13 +141,24 @@ font-size: 18px
     }
     
     .clip-me-12 {
-        clip-path: polygon(0 0, 100% 18%, 100% 81%, 0 100%);
+        clip-path: polygon(0 0, 100% 18%, 100% 89%, 0 100%);
         background-color:  #0A3652 !important;
         padding-bottom: 70px;
         padding-top: 120px;
         margin-top: -10%;
     }
  @media only screen and (max-width: 768px) {
+    .address-query {
+       margin-top: 90px;
+       padding: 0;
+    }
+    .cliper-12-query{
+      padding: .5rem !important;
+      margin-top: -12rem !important;
+   }
+   .clip-12-query{
+      padding: 10rem !important;
+   }
    .clip-me-2 {
        clip-path: polygon(0 0, 100% 4%, 100% 91%, 0% 100%);
        }
@@ -174,6 +185,10 @@ font-size: 18px
    .margin-query {
        margin-top: -20%;
    }
+
+   .address-query {
+   margin-top: 0;
+   }
    .clip-me-7 {
        padding-top:100px !important;
        margin-top: -26% !important;
@@ -183,6 +198,18 @@ font-size: 18px
    }
    .leader-margin {
        margin-top: -70% !important;
+   }
+   .clip-me-12 {
+      margin-top: -48% !important;
+   }
+
+   .clip-me-11 {
+      clip-path: polygon(0 9%, 100% 0, 100% 100%, 0 81%) !important;
+   }
+   .clip-12-query{
+      margin-top: 6rem !important;
+      padding: 2rem !important;
+      margin-bottom: 2rem !important;
    }
  }
  @media only screen and (width: 768px) {
