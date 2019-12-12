@@ -13,6 +13,12 @@
    background-color: #062538 !important; 
    padding: 20px 0 !important; 
 }
+.ren-border{
+   border-bottom: 4px solid #F2F2F2  !important;
+}
+.special-height{
+   min-height: 250px !important;
+}
 .bg-rensource-yellow {
    background-color: #F2C553 !important;
 }
