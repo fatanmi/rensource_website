@@ -178,6 +178,10 @@ font-size: 18px
        margin-top: 90px;
        padding: 0;
     }
+    .fancy-number{
+      height: auto !important;
+      min-height: 280px !important;
+   }
     .cliper-12-query{
       padding: .5rem !important;
       margin-top: -12rem !important;
@@ -215,6 +219,11 @@ font-size: 18px
  @media only screen and (max-width: 500px) {
    .margin-query {
        margin-top: -25%;
+   }
+
+   .fancy-number{
+      height: auto !important;
+      min-height: 220px !important;
    }
 
    .address-query {
