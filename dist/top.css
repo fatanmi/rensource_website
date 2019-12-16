@@ -16,9 +16,6 @@
 .ren-border{
    border-bottom: 4px solid #F2F2F2  !important;
 }
-.special-height{
-   min-height: 250px !important;
-}
 .bg-rensource-yellow {
    background-color: #F2C553 !important;
 }
@@ -87,14 +84,110 @@ color: #F2C553;
    clip-path: polygon(0 0, 100% 9%, 100% 91%, 0% 100%);
    -webkit-clip-path: polygon(0 0, 100% 9%, 100% 91%, 0% 100%);
 }
-.clip-me-3 {
+ .clip-me-3 {
    clip-path: polygon(0 0, 100% 0, 87% 98%, 0 92%);
    -webkit-clip-path: polygon(0 0, 100% 0, 87% 98%, 0 92%);
 }
+.litre-fuel {
+   clip-path: polygon(0 16%, 100% 0, 100% 100%, 0 86%);
+   -webkit-clip-path: polygon(0 16%, 100% 0, 100% 100%, 0 86%);
+   height: 251px
+   }
+   .litre-fuel h2 {
+      margin-top: 90px;
+     font-size: 42px;
+     line-height: 43px
+   }
+   .litre-fuel p {
+   color: #0A3652;
+   font-family: 'Avenir';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 19px;
+   }
+
+   .emissionSaved {
+      clip-path: polygon(0 0, 100% 16%, 100% 86%, 0 100%);
+      -webkit-clip-path: polygon(0 0, 100% 16%, 100% 86%, 0 100%);
+      height: 251px
+     }
+     .emissionSaved h2 {
+         margin-top: 90px;
+        font-size: 42px;
+        line-height: 43px
+     }
+     
+     .emissionSaved p {
+     font-family: 'Avenir';
+     font-style: normal;
+     font-weight: 500;
+     font-size: 19px;
+     }
 .margin-query{
    margin-top: -10%;
 }
-.clip-me-4 {
+.contact-info{
+   background: #F2C553;
+   min-height: 70vh;
+}
+.contact-info h1 {
+   margin-top: 40px;
+   text-transform:uppercase;
+   font-weight: 600;
+   font-size: 28px;
+   padding-left: 19% !important;
+
+}
+.contact-info p {
+   padding-left: 19% !important;
+}
+.contact-form{
+   background-color:  #0A3652 !important;
+
+}
+.tag-img {
+   background:url(../images/rensource-light-city.png) no-repeat no-repeat;
+   background-position: center;
+   min-height: 700px;
+   background-size: cover;
+   background-position-y: center;
+   display: flex !important;
+   justify-content: center !important;
+   align-items: center !important;
+ }
+@media only screen and (min-width: 768px) {
+   /* For desktop: */
+   .navbar {
+      padding: 0rem 3rem !important;
+  
+   }
+   .tag-img {
+      background:url(../images/rensource-light-city.png) no-repeat no-repeat;
+      background-position: center;
+      min-height: 700px;
+      background-size: cover;
+      background-position-y: -400px !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+    }
+    .remove-margin {
+       margin-left:0px !important;
+       margin-right:0px !important;
+    }
+ }
+ 
+ .tag-box {
+   text-align: center;
+   background:rgba(0,0,0,.4);
+   color:#fff;
+   padding:3rem;
+ }
+ .tag-title h2{
+    color:#fff;
+    font-weight:400;
+ }
+/* .clip-me-4 {
 clip-path: polygon(0 16%, 100% 0, 100% 100%, 0 86%);
 -webkit-clip-path: polygon(0 16%, 100% 0, 100% 100%, 0 86%);
 height: 251px
@@ -178,7 +271,7 @@ font-size: 18px
         padding-bottom: 70px;
         padding-top: 120px;
         margin-top: -10%;
-    }
+    } */
  @media only screen and (max-width: 768px) {
     .address-query {
        margin-top: 90px;
@@ -195,14 +288,16 @@ font-size: 18px
    .clip-12-query{
       padding: 10rem !important;
    }
-   .clip-me-2 {
-       clip-path: polygon(0 0, 100% 4%, 100% 91%, 0% 100%);
-       -webkit-clip-path: polygon(0 0, 100% 4%, 100% 91%, 0% 100%);
-       }
-       .clip-me-3 {
-           clip-path: polygon(0 0, 100% 0, 100% 98%, 0 93%);
-           -webkit-clip-path: polygon(0 0, 100% 0, 100% 98%, 0 93%);
-       }
+   .clip-me-3 {
+      clip-path: polygon(0 0, 100% 0, 100% 98%, 0 93%);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 98%, 0 93%);
+  }
+  .clip-me-2 {
+   clip-path: polygon(0 0, 100% 4%, 100% 91%, 0% 100%);
+   -webkit-clip-path: polygon(0 0, 100% 4%, 100% 91%, 0% 100%);
+   }
+   /* 
+
    .clip-me-7 {
        margin-top: -11%;
    }
@@ -213,14 +308,14 @@ font-size: 18px
    .clip-me-9 {
        clip-path: polygon(0 0, 99% 0, 100% 92%, 0 100%);
        -webkit-clip-path: polygon(0 0, 99% 0, 100% 92%, 0 100%);
-   }
+   } */
    .leader-margin {
        margin-top: -40% !important;
    }
    .clip-me-1{
-       clip-path: polygon(0 9%, 100% 0, 100% 100%, 0 95%);
-       -webkit-clip-path: polygon(0 9%, 100% 0, 100% 100%, 0 95%);
-   }
+      clip-path: polygon(0 9%, 100% 0, 100% 100%, 0 95%);
+      -webkit-clip-path: polygon(0 9%, 100% 0, 100% 100%, 0 95%);
+  } 
  }
  @media only screen and (max-width: 500px) {
    .margin-query {
@@ -235,25 +330,25 @@ font-size: 18px
    .address-query {
    margin-top: 0;
    }
-   .clip-me-7 {
+   /* .clip-me-7 {
        padding-top:100px !important;
        margin-top: -26% !important;
    }
    .clip-me-9 {
        clip-path: polygon(0 0, 99% 0, 100% 89%, 0 100%) !important;
        -webkit-clip-path: polygon(0 0, 99% 0, 100% 89%, 0 100%) !important;
-   }
+   } */
    .leader-margin {
        margin-top: -70% !important;
    }
-   .clip-me-12 {
+   /* .clip-me-12 {
       margin-top: -48% !important;
    }
 
    .clip-me-11 {
       clip-path: polygon(0 9%, 100% 0, 100% 100%, 0 81%) !important;
       -webkit-clip-path: polygon(0 9%, 100% 0, 100% 100%, 0 81%) !important;
-   }
+   } */
    .clip-12-query{
       margin-top: 6rem !important;
       padding: 2rem !important;
@@ -265,13 +360,15 @@ font-size: 18px
        margin-top: -10%;
    }
    .clip-me-3 {
-       clip-path: polygon(0 0, 100% 0, 100% 98%, 0 87%);
-       -webkit-clip-path: polygon(0 0, 100% 0, 100% 98%, 0 87%);
-   }
-   .clip-me-2 {
-       clip-path: polygon(0 0, 100% 4%, 100% 91%, 0% 100%);
-       -webkit-clip-path: polygon(0 0, 100% 4%, 100% 91%, 0% 100%);
-   }
+      clip-path: polygon(0 0, 100% 0, 100% 98%, 0 87%);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 98%, 0 87%);
+  }
+  .clip-me-2 {
+   clip-path: polygon(0 0, 100% 4%, 100% 91%, 0% 100%);
+   -webkit-clip-path: polygon(0 0, 100% 4%, 100% 91%, 0% 100%);
+}
+   /* 
+ */
    .founder-margin {
        margin-top: -20%;
    }
@@ -298,10 +395,10 @@ font-size: 18px;
 line-height: 2;
 font-size: 18px;
 }
-.clip-me-9 {
+/* .clip-me-9 {
 clip-path: polygon(0 0, 99% 0, 100% 82%, 0 100%);
 -webkit-clip-path: polygon(0 0, 99% 0, 100% 82%, 0 100%);
-}
+} */
 .leader-margin {
    margin-top: -9%;
 }
