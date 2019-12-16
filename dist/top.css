@@ -145,6 +145,48 @@ color: #F2C553;
    background-color:  #0A3652 !important;
 
 }
+.tag-img {
+   background:url(../images/rensource-light-city.png) no-repeat no-repeat;
+   background-position: center;
+   min-height: 700px;
+   background-size: cover;
+   background-position-y: center;
+   display: flex !important;
+   justify-content: center !important;
+   align-items: center !important;
+ }
+@media only screen and (min-width: 768px) {
+   /* For desktop: */
+   .navbar {
+      padding: 0rem 3rem !important;
+  
+   }
+   .tag-img {
+      background:url(../images/rensource-light-city.png) no-repeat no-repeat;
+      background-position: center;
+      min-height: 700px;
+      background-size: cover;
+      background-position-y: -500px !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+    }
+    .remove-margin {
+       margin-left:0px !important;
+       margin-right:0px !important;
+    }
+ }
+ 
+ .tag-box {
+   text-align: center;
+   background:rgba(0,0,0,.4);
+   color:#fff;
+   padding:3rem;
+ }
+ .tag-title h2{
+    color:#fff;
+    font-weight:400;
+ }
 /* .clip-me-4 {
 clip-path: polygon(0 16%, 100% 0, 100% 100%, 0 86%);
 -webkit-clip-path: polygon(0 16%, 100% 0, 100% 100%, 0 86%);

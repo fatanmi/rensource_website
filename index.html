@@ -40,7 +40,7 @@
 
         </nav>
         <nav class="navbar navbar-expand-md navbar-light bg-yellow">
-            <div class="container">
+            <div class="container-fluid">
                 <a class="pt-2 pb-2" href="/index.html">
                     <span class="mr-3">
                         <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -99,20 +99,20 @@
     <section class="sub-header bg-white">
         <!--    <div class="container-fluid">-->
         <div class="">
-            <div class="row">
+            <div class="row remove-margin">
 
-                <div class="col-xs-24 col-lg-12 d-flex p-4 bg-rensource-yellow style=" flex-direction:
-                    column;justify-content: center; /*position: absolute;*/ /*background: url('images/Rectangle.svg');*/
-                    mix-blend-mode: normal; background-size: cover; background-position: bottom; ">
+                <div class="col-xs-24 col-lg-12 padding-custom d-flex bg-rensource-yellow" style="padding: 3rem !important;/*flex-direction:
+                    column;justify-content: center;position: absolute;*/ /*background: url('images/Rectangle.svg');*/
+                    mix-blend-mode: normal; background-size: cover; background-position: bottom;padding-top: 6rem !important;">
                     <div class=" special-container pb-3">
                     <h2 class="text-color-gray-dark" style="font-weight: 700">Rensource develops, builds and manages
                         critical physical and digital infrastructure powering the productivity of small and medium
                         sized enterprises</h2>
-                    <!-- <p class="carou-p">
+                    <h5 class="carou-p" style="font-weight: 500;">
+                        Using the provision of solar-based microutilities an entry point, Rensource provides tools and services to support the digitalization and productivity growth of SMEs in West Africa
+                    </h5>
 
-                        </p> -->
-
-                    <div class="d-flex" style="flex-wrap: wrap">
+                    <div class="d-flex" style="flex-wrap: wrap;margin-top: 2rem;">
                         <!-- <a href="javascript;" class="btn btn-gray-dark mr-2 mb-3" id="howItWorks"
                                 data-target="what-we-do-section" style="background: #000;">
                                 <svg width="22" height="22" viewBox="0 0 27 27" fill="none"
@@ -256,7 +256,7 @@
                             <video id="tech-driven" class="vid video-js" controls preload="auto"
                                 poster="/videos/poster image for documentary.png" data-setup='{}'
                                 style="box-shadow: 2px 2px 50px #0A3652">
-                                <source src="videos/A Rensource Impact Story.mp4" type="video/mp4">
+                                <source src="videos/Bloomberg-Philanthropies-features Rensource-Energy-on-Climate-Change.mp4" type="video/mp4">
                                 </source>
                                 <p class="vjs-no-js">
                                     To view this video please enable JavaScript, and consider upgrading to a
@@ -276,7 +276,7 @@
     <section class="what-we-do bg-rensource-yellow pt-8 pb-8 " id="what-we-do-section">
         <div class="container-fluid mt-4 pb-5">
             <span class="mb-4">
-                <h1 class="text-left">What we do</h1>
+                <h1 class="text-center pb-4">What we do</h1>
             </span>
             <div class="row">
                 <div class="col-xs-24 col-sm-24 col-md-8 col-lg-8">
@@ -419,11 +419,10 @@
     </section>
     <!-- Testimonials End -->
 
-    <section class="products p-4 pt-8 pb-8 bg-rensource-blue  hide-xs white-text" style="background:url(images/Nigeria.svg) no-repeat no-repeat; background-size: 800px;
-    background-position: -300px center;">
+    <section class="products p-4 pt-8 pb-8 bg-rensource-blue  hide-xs white-text tag-img" style="">
         <div class="row">
-            <div class="container">
-                <div class="row">
+            <div class="tag-box">
+                <!--<div class="row">
                     <div class="col-xs-24 col-sm-12 col-lg-15">
                         <div class="col-lg-24">
                             <img src="/images/Bitmap.png" class="float-left img-fluid" />
@@ -562,6 +561,11 @@
                             </p>
                         </div>
                     </div>
+                </div>-->
+                <div class="tag-title">
+                    <h2>
+                        Powering the productivity of <br/> small and medium <br/>enterprise
+                    </h2>
                 </div>
             </div>
     </section>
@@ -603,7 +607,7 @@
             <div class="container">
                 <div class="row ">
                     <div class="col-xs-24  col-lg-8">
-                        <h5 class="mb-4 mt-6">From our News Desk</h5>
+                        <h5 class="mb-4 mt-6">Press Releases and News Articles</h5>
                         <div id="news" class="threadContainer threadContainer-1">
                             <div id="rssfeeds"></div>
                         </div>
@@ -615,7 +619,7 @@
                         </div>
                     </div>
                     <div class="col-xs-24  col-lg-8">
-                        <h5 class="mb-4 mt-6">Press Releases and News Articles</h5>
+                        <h5 class="mb-4 mt-6">From our News Desk </h5>
                         <div id="press" class="threadContainer threadContainer-3">
                             <div id="listing"></div>
                         </div>
