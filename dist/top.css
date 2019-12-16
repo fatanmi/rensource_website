@@ -128,18 +128,18 @@ color: #F2C553;
 }
 .contact-info{
    background: #F2C553;
-   min-height: 70vh;
+   /*min-height: 70vh;*/
 }
 .contact-info h1 {
-   margin-top: 40px;
+   /*margin-top: 40px;*/
    text-transform:uppercase;
    font-weight: 600;
    font-size: 28px;
-   padding-left: 19% !important;
+   /*padding-left: 19% !important;*/
 
 }
 .contact-info p {
-   padding-left: 19% !important;
+   /*padding-left: 19% !important;*/
 }
 .contact-form{
    background-color:  #0A3652 !important;
