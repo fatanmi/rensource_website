@@ -16,7 +16,7 @@ export default class ArticlesListing extends React.Component {
                     </h5>
                 </a>
                 <p className="">
-                    { elem.body.substring(0, 200) }...
+                    { elem.body.substring(0, 200) } ...
                 </p>
             </div>
         }) : null;
