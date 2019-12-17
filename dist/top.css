@@ -148,7 +148,7 @@ color: #F2C553;
 .tag-img {
    background:url(../images/rensource-light-city.png) no-repeat no-repeat;
    background-position: center;
-   min-height: 700px;
+   min-height: 555px;
    background-size: cover;
    background-position-y: center;
    display: flex !important;
@@ -164,7 +164,7 @@ color: #F2C553;
    .tag-img {
       background:url(../images/rensource-light-city.png) no-repeat no-repeat;
       background-position: center;
-      min-height: 700px;
+      min-height: 555px;
       background-size: cover;
       background-position-y: -400px !important;
       display: flex !important;
