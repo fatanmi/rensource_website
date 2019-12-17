@@ -21,13 +21,13 @@ function handleFailureResponse(err) {
     }
 }
 
-export const getArticles = (page = 1, size = 6) => {
+export const getArticles = (page = 1, size = 100) => {
     return axios.get(api.article.get.all(page, size))
         .then(handleSuccessResponse)
         .catch(handleFailureResponse);
 };
 
-export const getPublishedArticles = (page = 1, size = 6) => {
+export const getPublishedArticles = (page = 1, size = 100) => {
     return axios.get(api.article.get.due(page, size))
         .then(handleSuccessResponse)
         .catch(handleFailureResponse);
@@ -121,7 +121,7 @@ export const getArticlesByType = (type = 0, page = 1, size = 3) => {
         .catch(handleFailureResponse);
 };
 
-export const getArticleTypes = (page = 1, size = 6) => {
+export const getArticleTypes = (page = 1, size = 100) => {
     return axios.get(api.articleTypes.get(page, size))
         .then(handleSuccessResponse)
         .catch(handleFailureResponse);
