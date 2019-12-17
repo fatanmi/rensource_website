@@ -24,7 +24,7 @@ export const api = {
     feed: {
         get: {
             single: (id) => `${host}/${path}/rssfeeds/${id}`,
-            all: (page, size) => `${host}/${path}/rssfeeds/all?page=${page}&size=${size}`
+            all: (page, size) => `${host}/${path}/rssfeeds/all?page=${page}&size=100`
         },
         post: () => `${host}/${path}/rssfeeds`,
         put: () => `${host}/${path}/rssfeeds`,
