@@ -5,12 +5,12 @@ import 'owl.carousel/dist/assets/owl.theme.default.min.css'
 var owl = $('.testimonials');
 
 owl.owlCarousel({
-    loop:true,
+    loop:false,
     nav:true,
     margin:10,
     center: true,
-    autoplay:true,
-    autoplayTimeout:4000,
+    autoplay:false,
+    autoplayTimeout:90000,
     autoplayHoverPause:true,
     responsive:{
         0:{
@@ -24,6 +24,7 @@ owl.owlCarousel({
         }
     }
 });
+
 // $('.play').on('click',function(){
 //     owl.trigger('play.owl.autoplay',[1000])
 // })
